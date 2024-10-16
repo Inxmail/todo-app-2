@@ -1,6 +1,8 @@
-import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
+import TodoOverview from "./components/TodoOverview.tsx";
+
+import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 
 const App = () => {
@@ -9,7 +11,7 @@ const App = () => {
   return (
     <MantineProvider theme={theme}>
       <Notifications />
-      {/* TODO: add app here */}
+      <TodoOverview />
     </MantineProvider>
   );
 };
